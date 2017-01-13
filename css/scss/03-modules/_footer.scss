@@ -1,0 +1,122 @@
+.footer {
+    padding: 125px 0 75px;
+    background-color: $black;
+    color: #fff;
+
+    &-middle {
+        padding: 160px 0;
+    }
+
+    &-title {
+        font-size: 72px;
+        color: #fff;
+        font-family: $e;
+        font-weight: normal;
+        margin-bottom: 30px;
+
+        &:after {
+            content: '';
+            width: 110px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            margin: 16px auto 0;
+        }
+    }
+
+    &-text {
+        width: 620px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 75px;
+    }
+}
+
+
+.widget-subscribe {
+    width: 100%;
+
+    .subscribe-title {
+        text-align: left;
+        font-size: 18px;
+        font-family: $ps;
+        text-transform: uppercase;
+    }
+
+    .subscribe-form {
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            text-align: left;
+            font-family: $e;
+            font-size: 72px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:focus {
+                color: $red;
+                border-color: $red;
+            }
+        }
+    }
+
+    .submit {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+::-moz-placeholder          {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+:-moz-placeholder           {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+:-ms-input-placeholder      {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+:focus::-webkit-input-placeholder {opacity: 0;}
+:focus::-moz-placeholder          {opacity: 0;}
+:focus:-moz-placeholder           {opacity: 0;}
+:focus:-ms-input-placeholder      {opacity: 0;}
