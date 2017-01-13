@@ -10,9 +10,14 @@
     
     h1 {
         color: #FFF;
-        font-size: 72px;
+        font: 72px $e;
     }
     span {
         color: #FFF;
+        font: 18px $ps;
+        text-transform: uppercase;
+    }
+    .button {
+        margin-top: 50px;
     }
 }

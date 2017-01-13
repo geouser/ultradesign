@@ -46,11 +46,14 @@
                 transition: .2s opacity .4s;
         ul {
             list-style-type: none;
+            text-align: center;
             li {
                 display: inline-block;
                 vertical-align: middle;
+                margin: 10px 35px;
                 a {
                     color: #FFF;
+                    font: 72px $e;
                 }
             }
         }
