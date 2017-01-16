@@ -10,6 +10,7 @@
 @import '02-base/mixins';
 @import '02-base/vars';
 @import '02-base/settings';
+@import '02-base/content';
 
 
 /*Modules styles*/
@@ -19,5 +20,15 @@
 @import '03-modules/offer';
 @import '03-modules/popup';
 
+@import '03-modules/site-intro';
+@import '03-modules/latest-works';
 @import '03-modules/footer';
+
+@import '03-modules/clients';
+@import '03-modules/contact-us';
+@import '03-modules/our-team';
 /*Pages styles*/
+
+@import '04-pages/page-about';
+@import '04-pages/page-services';
+@import '04-pages/page-blog';

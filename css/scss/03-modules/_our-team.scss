@@ -1,0 +1,30 @@
+.team-grid {
+    margin-bottom: -70px;
+}
+.team-member {
+    margin-bottom: 70px;
+
+    &__photo {
+        margin: 0;
+        width: 100%;
+        display: block;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__position {
+        font-family: $ps;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding-top: 15px;
+    }
+
+    &__name {
+        font-family: $e;
+        font-size: 24px;
+        letter-spacing: 0.025em;
+    }
+}

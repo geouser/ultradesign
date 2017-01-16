@@ -1,0 +1,72 @@
+.services-list {
+    list-style: none;
+    padding-right: -webkit-calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
+.service-link {
+    a {
+        @include flex($alignI: center);
+        text-align: left;
+        position: relative;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: $black;
+        border-top: 2px solid $black;
+        padding: 55px 0;
+    }
+
+    &__number {
+        position: absolute;
+        top: 22px;
+        left: 0;
+        font-family: $ps;
+        color: $red;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &__label {
+        width: 58%;
+        padding-right: 20px;
+        font-size: 48px;
+        font-family: $e;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &__description {
+        width: 42%;
+        color: $black;
+    }
+
+    &:last-of-type a {
+        border-bottom: 2px solid $black;
+
+        &:hover {
+            border-bottom-color: $red;
+        }
+    }
+
+    &:hover {
+        a {
+            border-top-color: $red;
+        }
+
+        & + .service-link a {
+            border-top-color: $red;
+        }
+    }
+
+    &:hover &__label {
+        color: $red;
+    }
+
+    &:hover &__number {
+        color: $black;
+    }
+}

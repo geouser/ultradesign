@@ -1,0 +1,23 @@
+.intro-text {
+    font-size: 48px;
+    font-weight: normal;
+    font-family: $e;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 145px;
+
+    strong {
+        font-weight: normal;
+    }
+}
+
+
+.intro-image {
+    width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

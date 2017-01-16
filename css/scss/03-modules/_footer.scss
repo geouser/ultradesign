@@ -30,6 +30,51 @@
         margin: 0 auto;
         margin-bottom: 75px;
     }
+
+
+    .footer-contacts {
+        &:after {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            margin: 35px auto 0;
+        }
+
+        .column {
+            width: 220px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 40px;
+            text-align: center;
+            color: #fff;
+
+            a {
+                color: #fff;
+            }
+
+            &-socials {
+                a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #fff;
+                    -webkit-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    margin: 0 8px;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        margin-top: 30px;
+    }
 }
 
 
