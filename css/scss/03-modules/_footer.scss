@@ -3,6 +3,10 @@
     background-color: $black;
     color: #fff;
 
+    &--small {
+        padding: 75px 0;
+    }
+
     &-middle {
         padding: 160px 0;
     }
