@@ -2,6 +2,16 @@
     padding: 125px 0 75px;
     background-color: $black;
     color: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    #bg-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
 
     &--small {
         padding: 75px 0;
@@ -105,6 +115,7 @@
             text-align: left;
             font-family: $e;
             font-size: 72px;
+            height: auto;
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -136,36 +147,40 @@
     }
 }
 
-::-webkit-input-placeholder {
+.subscribe-form input::-webkit-input-placeholder {
     color: #fff;
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-transform: none;
 }
-::-moz-placeholder          {
+.subscribe-form input::-moz-placeholder          {
     color: #fff;
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-transform: none;
 }
-:-moz-placeholder           {
+.subscribe-form input:-moz-placeholder           {
     color: #fff;
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-transform: none;
 }
-:-ms-input-placeholder      {
+.subscribe-form input:-ms-input-placeholder      {
     color: #fff;
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-transform: none;
 }
 
-:focus::-webkit-input-placeholder {opacity: 0;}
-:focus::-moz-placeholder          {opacity: 0;}
-:focus:-moz-placeholder           {opacity: 0;}
-:focus:-ms-input-placeholder      {opacity: 0;}
+.subscribe-form input:focus::-webkit-input-placeholder {opacity: 0;}
+.subscribe-form input:focus::-moz-placeholder          {opacity: 0;}
+.subscribe-form input:focus:-moz-placeholder           {opacity: 0;}
+.subscribe-form input:focus:-ms-input-placeholder      {opacity: 0;}

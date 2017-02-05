@@ -25,6 +25,8 @@ body {
 
 .section {
     margin: 155px 0 160px;
+    position: relative;
+    z-index: 1;
 
     &-title {
         margin-bottom: 150px;
@@ -52,6 +54,12 @@ body {
 
     .column-2 {
         width: 50%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .column-3 {
+        width: 33.333%;
         padding: 0 10px;
         margin-bottom: 20px;
     }
