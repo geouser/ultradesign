@@ -24,10 +24,10 @@ function exist(el){
 
 
 jQuery(document).ready(function($) {
-
+    /*
     if ( !window.params.isMobile ) {
         backgroundAnimation(document.getElementById('bg-animation'));
-    }
+    }*/
 
     /*---------------------------
                               CONTACTS FORM
@@ -74,14 +74,19 @@ jQuery(document).ready(function($) {
                                   MENU TOGGLE
     ---------------------------*/
     $('.menu-button').on('click', function(event) {
+        console.log('csd');
         event.preventDefault();
         $(this).toggleClass('active');
         $('#siteNavigation').toggleClass('active');
         if ($('#siteNavigation').hasClass('active')) {
             $('#siteNavigation').css('transform', 'translateY(0%)');
-            $('body').css('overflow', 'hidden');
+            $('body').css({
+                'overflow': 'hidden'
+            });
         } else {
-            $('body').css('overflow', 'visible');
+            $('body').css({
+                'overflow': 'visible'
+            });
             setTimeout(function(){ 
                 $('#siteNavigation').css('transform', 'translateY(110%)');
             }, 600);
@@ -89,6 +94,14 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('.languages > li a').click(function(event){
+        event.preventDefault();
+        $('.languages-hidden').fadeIn();
+    });
+    $('.languages-hidden .close-button').click(function(event){
+        event.preventDefault();
+        $('.languages-hidden').fadeOut();
+    });
 
     /*---------------------------
                                   Magnific popup
@@ -210,7 +223,7 @@ jQuery(document).ready(function($) {
 }); // end file
 
 
-
+/* 
 var backgroundAnimation = function (el) {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -349,7 +362,7 @@ var backgroundAnimation = function (el) {
     function shiftPoint(p) {
         TweenLite.to(p, 1 + 1 * Math.random(), {
             x: p.originX - 50 + Math.random() * 100,
-            y: p.originY - 50 + Math.random() * 100, /*ease: Circ.easeInOut,*/
+            y: p.originY - 50 + Math.random() * 100, // ease: Circ.easeInOut,
             onComplete: function () {
                 shiftPoint(p);
             }
@@ -392,3 +405,4 @@ var backgroundAnimation = function (el) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 }
+*/
