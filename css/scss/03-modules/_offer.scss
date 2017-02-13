@@ -18,14 +18,29 @@
     h1 {
         color: #FFF;
         font: 72px $e;
+        @media (max-width: 1700px) {
+            font-size: 56px;
+        }
+        @media (max-width: 1400px) {
+            font-size: 46px;
+        }
     }
     span {
         color: #FFF;
         font: 18px $ps;
         text-transform: uppercase;
+        @media (max-width: 1700px) {
+            font-size: 17px;
+        }
+        @media (max-width: 1400px) {
+            font-size: 16px;
+        }
     }
     .button {
         margin-top: 50px;
+        @media (max-width: 1400px) {
+            margin-top: 30px;
+        }
     }
 
     .scroll-down {
@@ -36,7 +51,12 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
-
+        @media (max-width: 1700px) {
+            bottom: 60px;
+        }
+        @media (max-width: 1400px) {
+            bottom: 50px;
+        }
         svg {
             display: block;
 

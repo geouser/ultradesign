@@ -80,13 +80,7 @@ jQuery(document).ready(function($) {
         $('#siteNavigation').toggleClass('active');
         if ($('#siteNavigation').hasClass('active')) {
             $('#siteNavigation').css('transform', 'translateY(0%)');
-            $('body').css({
-                'overflow': 'hidden'
-            });
         } else {
-            $('body').css({
-                'overflow': 'visible'
-            });
             setTimeout(function(){ 
                 $('#siteNavigation').css('transform', 'translateY(110%)');
             }, 600);
