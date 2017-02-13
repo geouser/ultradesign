@@ -78,8 +78,10 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $(this).toggleClass('active');
         $('#siteNavigation').toggleClass('active');
+        $('body').toggleClass('opened-menu');
         if ($('#siteNavigation').hasClass('active')) {
             $('#siteNavigation').css('transform', 'translateY(0%)');
+
         } else {
             setTimeout(function(){ 
                 $('#siteNavigation').css('transform', 'translateY(110%)');

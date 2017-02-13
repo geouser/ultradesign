@@ -5,11 +5,66 @@
     @include flex();
     padding: 0 40px;
     @include transition(all, .4s);
+    &.hasScrolled {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background: rgba(0,0,0,.8);
+        top: 0;
+        .logo {
+            max-width: 340px;
+        }
+        @media (max-width: 1700px) {
+            .logo {
+                max-width: 300px;
+            }
+        }
+        @media (max-width: 1400px) {
+            .logo {
+                max-width: 240px;
+            }
+        }
+    }
     @media (max-width: 1700px) {
         top: 30px;
     }
     @media (max-width: 1400px) {
         top: 20px;
+    }
+}
+
+.logo {
+    @include transition(all, .4s);
+    img {
+        max-width: 100%;
+    }
+    @media (max-width: 1700px) {
+        width: 320px;
+    }
+    @media (max-width: 1400px) {
+        width: 260px;
+    }
+}
+
+
+.opened-menu {
+    .mainHeader.hasScrolled {
+        background: transparent;
+        top: 40px;
+        .logo {
+            width: 340px;
+        }
+        @media (max-width: 1700px) {
+            top: 30px;
+            .logo {
+                width: 300px;
+            }
+        }
+        @media (max-width: 1400px) {
+            top: 20px;
+            .logo {
+                width: 240px;
+            }
+        }
     }
 }
 
@@ -34,6 +89,18 @@
         -ms-transition: max-width .8s cubic-bezier(0.68, -0.55, 0.265, 1.55), .2s padding .2s;
          -o-transition: max-width .8s cubic-bezier(0.68, -0.55, 0.265, 1.55), .2s padding .2s;
             transition: max-width .8s cubic-bezier(0.68, -0.55, 0.265, 1.55), .2s padding .2s;
+    @media (max-width: 1700px) {
+        height: -webkit-calc(100% - 30px);
+        height: calc(100% - 30px);
+        width: -webkit-calc(100% - 30px);
+        width: calc(100% - 30px);
+    }
+    @media (max-width: 1400px) {
+        height: -webkit-calc(100% - 20px);
+        height: calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
     &.active {
         max-width: 100%;
         padding: 35px;
@@ -153,17 +220,6 @@
 }
 
 
-.logo {
-    img {
-        max-width: 100%;
-    }
-    @media (max-width: 1700px) {
-        width: 320px;
-    }
-    @media (max-width: 1400px) {
-        width: 260px;
-    }
-}
 
 
 
@@ -281,6 +337,12 @@
     @include position(fixed, 40px, 40px, 40px, auto);
     background-color: #1B1B1B;
     display: none;
+    @media (max-width: 1700px) {
+        @include position(fixed, 30px, 30px, 30px, auto);
+    }
+    @media (max-width: 1400px) {
+        @include position(fixed, 20px, 20px, 20px, auto);
+    }
     @media (max-width: 1400px) {
         width: 300px;
         padding: 30px;
@@ -332,7 +394,11 @@
         }
     }
 }
-
+@media (min-width: 1700px) {
+    .hasScrolled .languages-hidden {
+        @include position(fixed, 30px, 30px, 30px, auto);
+    }
+}
 .close-button {
     float: right;
     background-color: transparent;
