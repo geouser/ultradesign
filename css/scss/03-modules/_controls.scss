@@ -36,6 +36,20 @@
         font-size: 18px;
         border-width: 3px;
     }
+    @media (max-width: 800px) {
+        padding: 0 40px;
+        height: 45px;
+        line-height: 42px;
+        font-size: 16px;
+        border-width: 3px;
+    }
+    @media (max-width: 600px) {
+        padding: 0 30px;
+        height: 40px;
+        line-height: 37px;
+        font-size: 15px;
+        border-width: 2px;
+    }
 }
 
 
