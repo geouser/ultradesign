@@ -194,12 +194,19 @@ body {
     position: absolute;
     top: -60px;
     padding: 0 10px;
-    width: 100%;
+    max-width: 100%;
     @include flex($alignI: center);
 
-    @media (max-width: 767px) {
-        top: -40px;
+    @media (max-width: 1700px) {
+       top: -50px;
     }
+    @media (max-width: 1400px) {
+       top: -40px;
+    }
+    @media (max-width: 1200px) {
+       top: -30px;
+    }
+
 
     &--bottom {
         bottom: -40px;
@@ -209,4 +216,11 @@ body {
     .pull-right {
         margin: 0 0 0 auto;
     }
+}
+
+time {
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: $pr;
+    font-size: 18px;
 }
