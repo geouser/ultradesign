@@ -451,3 +451,13 @@ article {
         }
     }
 }
+
+::-moz-selection { /* Code for Firefox */
+    background: $red;
+    color: $black;
+}
+
+::selection {
+    background: $red;
+    color: $black;
+}
