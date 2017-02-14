@@ -1,16 +1,33 @@
 .client-preview {
     display: block;
     width: 100%;
-    height: 300px;
-    @extend %vertAlign;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     z-index: 1;
     cursor: pointer;
-
+    @media (max-width: 400px) {
+        width: 80%;
+        margin: 0 auto;
+    }
     &:after {
+        content: "";
+        display: block;
+        padding-top: 100%;
+        @media (max-width: 400px) {
+            padding-top: 90%;
+        }
+    }
+    >div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        @extend %vertAlign;
+    }
+    >div:after {
         content: '';
         width: 100%;
         height: 100%;
