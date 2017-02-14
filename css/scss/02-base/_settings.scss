@@ -24,12 +24,24 @@ body {
         width: 100%;
         padding: 0 40px;
     }
+
+    @media (max-width: 991px) {
+        padding: 0 15px;
+    }
 }
 
 .section {
     margin: 155px 0 160px;
     position: relative;
     z-index: 1;
+
+    @media (max-width: 991px) {
+        margin: 120px 0;
+    }
+
+    @media (max-width: 767px) {
+        margin: 80px 0;
+    }
 
     &-title {
         margin-bottom: 150px;
@@ -45,6 +57,14 @@ body {
             font-family: $e;
             font-weight: normal;
             line-height: 72px;
+
+            @media (max-width: 991px) {
+                font-size: 58px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 48px;
+            }
         }
     }
 }

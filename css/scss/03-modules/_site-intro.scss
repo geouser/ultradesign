@@ -7,6 +7,20 @@
     margin-right: auto;
     margin-bottom: 145px;
 
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 38px;
+        margin-bottom: 120px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+
     strong {
         font-weight: normal;
     }

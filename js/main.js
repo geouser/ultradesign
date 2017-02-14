@@ -24,10 +24,10 @@ function exist(el){
 
 
 jQuery(document).ready(function($) {
-    /*
+
     if ( !window.params.isMobile ) {
         backgroundAnimation(document.getElementById('bg-animation'));
-    }*/
+    }
 
     /*---------------------------
                               CONTACTS FORM
@@ -219,7 +219,7 @@ jQuery(document).ready(function($) {
 }); // end file
 
 
-/* 
+
 var backgroundAnimation = function (el) {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -401,4 +401,3 @@ var backgroundAnimation = function (el) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 }
-*/

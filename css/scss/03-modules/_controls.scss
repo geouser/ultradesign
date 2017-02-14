@@ -154,6 +154,10 @@
 }
 .form-group.submit {
     margin-top: 80px;
+
+    @media (max-width: 991px) {
+        margin-top: 25px;
+    }
 }
 .form-group .button {
     color: #fff;
@@ -183,6 +187,11 @@ textarea {
     font-family: $ps;
     color: $black;
     background-color: transparent;
+
+    @media (max-width: 991px) {
+        height: 40px;
+        font-size: 16px;
+    }
 
     &::-webkit-input-placeholder {
         color: $black;
@@ -224,6 +233,11 @@ textarea {
     padding-top: 12px;
     padding-bottom: 12px;
     resize: none;
+
+    @media (max-width: 991px) {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
 }
 .form-group.focus input[type=text],
 .form-group.focus input[type=email],
