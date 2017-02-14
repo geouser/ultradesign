@@ -345,7 +345,7 @@ var backgroundAnimation = function (el) {
                     points[i].circle.active = 0.1;
                 } else {
                     points[i].active = 0;
-                    points[i].circle.active = 0;
+                    points[i].circle.active = 0.05;
                 }
 
                 drawLines(points[i]);
