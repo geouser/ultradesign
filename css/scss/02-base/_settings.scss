@@ -194,7 +194,7 @@ body {
     position: absolute;
     top: -60px;
     padding: 0 10px;
-    max-width: 100%;
+    width: 100%;
     @include flex($alignI: center);
 
     @media (max-width: 1700px) {
