@@ -416,7 +416,7 @@ article {
 
     .navigation {
         top: 70px;
-        left: 0;
+
             @media (max-width: 1700px) {
                top: 50px;
             }
@@ -431,6 +431,7 @@ article {
             }
             @media (max-width: 600px) {
                top: 15px;
+               left: 0;
             }
     }
 
