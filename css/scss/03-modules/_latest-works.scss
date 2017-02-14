@@ -130,6 +130,13 @@
         -ms-transform: translateY(-100%);
         -o-transform: translateY(-100%);
         transform: translateY(-100%);
+
+        @media (max-width: 1050px) {
+            -webkit-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
     }
 
     &:hover &__tags {
