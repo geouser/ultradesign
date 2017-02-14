@@ -16,6 +16,13 @@
         color: $black;
         border-top: 2px solid $black;
         padding: 55px 0;
+
+        @media (max-width: 1200px) {
+            padding: 45px 0;
+        }
+        @media (max-width: 475px) {
+            padding: 30px 0;
+        }
     }
 
     &__number {
@@ -27,6 +34,10 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+
+        @media (max-width: 475px) {
+            top: 10px;
+        }
     }
 
     &__label {
@@ -37,11 +48,40 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+
+        @media (max-width: 1200px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 991px) {
+            width: 50%;
+            font-size: 36px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 475px) {
+            font-size: 20px;
+        }
     }
 
     &__description {
         width: 42%;
         color: $black;
+
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 14px;
+        }
     }
 
     &:last-of-type a {
