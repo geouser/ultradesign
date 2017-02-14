@@ -503,7 +503,7 @@
     @include position(fixed, 40px, 40px, 40px, auto);
     background-color: #1B1B1B;
     display: none;
-    @include transition(all, .4s);
+    @include transition(padding, .4s);
     @media (max-width: 1700px) {
         @include position(fixed, 30px, 30px, 30px, auto);
     }
