@@ -419,7 +419,7 @@ article {
 
     .navigation {
         top: 70px;
-        left: 0;
+
             @media (max-width: 1700px) {
                top: 50px;
             }
@@ -434,6 +434,7 @@ article {
             }
             @media (max-width: 600px) {
                top: 15px;
+               left: 0;
             }
     }
 
@@ -452,4 +453,14 @@ article {
            padding-top: 60px;
         }
     }
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: $red;
+    color: $black;
+}
+
+::selection {
+    background: $red;
+    color: $black;
 }

@@ -294,6 +294,12 @@ textarea {
     }
 }
 
+.form-group input:hover,
+.form-group textarea:hover {
+    border-bottom-color: $red;
+    color: $red;
+}
+
 .form-group.focus textarea {
     height: 120px;
     border-color: $red;
