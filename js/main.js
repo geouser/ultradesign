@@ -25,9 +25,7 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
-    if ( !window.params.isMobile ) {
-        backgroundAnimation(document.getElementById('bg-animation'));
-    }
+    backgroundAnimation(document.getElementById('bg-animation'));
 
     /*---------------------------
                               CONTACTS FORM
@@ -41,6 +39,23 @@ jQuery(document).ready(function($) {
         if ( !$(this).val() ) {
             $(this).parent().removeClass('focus');
         }
+    });
+
+
+
+    /*---------------------------
+                                Cases filters
+    ---------------------------*/
+    $('.filter-dropdown').on('click', function(event) {
+        event.preventDefault();
+        $(this).parent('.filter-controls').toggleClass('state-active');
+    });
+
+    $('.filter-categories input').on('change', function(event) {
+        event.preventDefault();
+        var label = $(this).siblings('label').text();
+        $('.filter-dropdown .text-holder').text(label);
+        $('.filter-controls').removeClass('state-active');
     });
 
 
@@ -241,10 +256,10 @@ var backgroundAnimation = function (el) {
 
         // create points
         points = [];
-        for (var x = 0; x < width; x = x + width / 18) {
-            for (var y = 0; y < height; y = y + height / 18) {
-                var px = x + Math.random() * width / 18;
-                var py = y + Math.random() * height / 18;
+        for (var x = 0; x < width; x = x + 50) {
+            for (var y = 0; y < height; y = y + 50) {
+                var px = x + Math.random() * 50;
+                var py = y + Math.random() * 50;
                 var p = {x: px, originX: px, y: py, originY: py};
                 points.push(p);
             }
@@ -258,7 +273,7 @@ var backgroundAnimation = function (el) {
                 var p2 = points[j]
                 if (!(p1 == p2)) {
                     var placed = false;
-                    for (var k = 0; k < 4; k++) {
+                    for (var k = 0; k < 3; k++) {
                         if (!placed) {
                             if (closest[k] == undefined) {
                                 closest[k] = p2;
@@ -266,7 +281,7 @@ var backgroundAnimation = function (el) {
                             }
                         }
                     }
-                    for (var k = 0; k < 4; k++) {
+                    for (var k = 0; k < 3; k++) {
                         if (!placed) {
                             if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
                                 closest[k] = p2;
