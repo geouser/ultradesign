@@ -31,6 +31,10 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+        @media (max-width: 600px) {
+            margin-top: 10px;
+        }
+        
     }
 
     &:hover &__title {
@@ -52,6 +56,13 @@
         -ms-transform: translateY(50px);
         -o-transform: translateY(50px);
         transform: translateY(50px);
+        @media (max-width: 600px) {
+            -webkit-transform: none;
+               -moz-transform: none;
+                -ms-transform: none;
+                 -o-transform: none;
+                    transform: none;
+        }
     }
 
     &:hover &__tags {
