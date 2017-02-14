@@ -7,6 +7,10 @@
     margin-right: auto;
     margin-bottom: 145px;
 
+    @media (max-width: 1600px) {
+        font-size: 44px;
+    }
+
     @media (max-width: 1080px) {
         width: 100%;
     }
