@@ -11,7 +11,7 @@
     &.hasScrolled {
         padding-top: 6px;
         padding-bottom: 6px;
-        background: rgba(0,0,0,.8);
+        background: rgba(21,21,21,.8);
         top: 0;
         .logo {
             max-width: 340px;
@@ -156,7 +156,8 @@
                     color: #FFF;
                     font: 72px $e;
                     @include transition(all, .2s);
-                    &:hover {
+                    &:hover,
+                    &.active {
                         color: $red;
                     }
                     @media (max-width: 1700px) {
