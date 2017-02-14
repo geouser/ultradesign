@@ -46,6 +46,14 @@ body {
     &-title {
         margin-bottom: 150px;
 
+        @media (max-width: 991px) {
+            margin-bottom: 120px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 80px;
+        }
+
         .pre-title {
             font-size: 18px;
             font-family: $ps;
@@ -100,6 +108,10 @@ body {
     padding: 0 10px;
     width: 100%;
     @include flex($alignI: center);
+
+    @media (max-width: 767px) {
+        top: -40px;
+    }
 
     &--bottom {
         bottom: -40px;
