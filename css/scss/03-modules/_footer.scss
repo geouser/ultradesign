@@ -261,6 +261,9 @@
     overflow: hidden;
     text-indent: -9999px;
     text-align: left;
+    -webkit-transition: none!important;
+    -o-transition: none!important;
+    transition: none!important;
 }
  
 .social-insta:hover { background-position: -2px -0px; width: 16px; height: 16px; }
