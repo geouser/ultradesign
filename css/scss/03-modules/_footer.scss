@@ -104,6 +104,17 @@
 
             a {
                 color: #fff;
+                -webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $red!important;
+                }
+
+                &[href^=mailto] {
+                    text-transform: uppercase;
+                }
             }
 
             &-socials {
@@ -111,9 +122,9 @@
                     display: inline-block;
                     vertical-align: middle;
                     color: #fff;
-                    -webkit-transition: all 0.3s ease;
-                    -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
+                    -webkit-transition: none;
+                    -o-transition: none;
+                    transition: none;
                     margin: 0 8px;
 
                     &:hover {
@@ -241,3 +252,22 @@
 .subscribe-form input:focus::-moz-placeholder          {opacity: 0;}
 .subscribe-form input:focus:-moz-placeholder           {opacity: 0;}
 .subscribe-form input:focus:-ms-input-placeholder      {opacity: 0;}
+
+
+
+.social-icon {
+    display: inline-block;
+    background: url('../images/socials-sprite.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+ 
+.social-insta:hover { background-position: -2px -0px; width: 16px; height: 16px; }
+.social-insta { background-position: -2px -18px; width: 16px; height: 16px; }
+.social-tw:hover { background-position: -2px -36px; width: 16px; height: 14px; }
+.social-tw { background-position: -2px -52px; width: 16px; height: 14px; }
+.social-youtube:hover { background-position: -2px -68px; width: 16px; height: 12px; }
+.social-youtube { background-position: -2px -82px; width: 16px; height: 12px; }
+.social-fb:hover { background-position: -2px -96px; width: 10px; height: 16px; }
+.social-fb { background-position: -2px -114px; width: 10px; height: 16px; }
