@@ -17,6 +17,9 @@
         }
         .menu-button {
             background-color: $red;
+            .menu-button__text {
+                opacity: 0;
+            }
             &:hover {
                 .menu-line {
                     background-color: #FFF;
@@ -66,6 +69,9 @@
         }
         .menu-button {
             background-color: transparent;
+            .menu-button__text {
+                opacity: 1;
+            }
             &:hover {
                 .menu-line {
                     background-color: $red;
@@ -364,6 +370,12 @@
         color: #FFF;
         text-transform: uppercase;
         font: 21px $pb;
+        @include transition(all, .2s);
+        -webkit-transition-delay: .4s;
+           -moz-transition-delay: .4s;
+            -ms-transition-delay: .4s;
+             -o-transition-delay: .4s;
+                transition-delay: .4s;
         @media (max-width: 1400px) {
             padding-left: 56px;
         }
