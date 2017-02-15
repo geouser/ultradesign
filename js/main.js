@@ -137,6 +137,16 @@ jQuery(document).ready(function($) {
         mainClass: 'my-mfp-slide-bottom'
     });
 
+    $('.magnific-youtube').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+    });
+
 
 
     /*----------------------------
