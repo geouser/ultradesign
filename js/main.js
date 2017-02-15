@@ -105,7 +105,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('.languages > li a').click(function(event){
+    $('.languages > li').click(function(event){
         event.preventDefault();
         $('.languages-hidden').fadeIn();
     });
