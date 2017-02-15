@@ -25,7 +25,10 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
-    backgroundAnimation(document.getElementById('bg-animation'));
+    if ( !window.params.isMobile ) {
+        backgroundAnimation(document.getElementById('bg-animation'));
+    }
+    
 
     /*---------------------------
                               CONTACTS FORM
