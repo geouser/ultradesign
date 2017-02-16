@@ -101,3 +101,62 @@
 
     }
 }
+
+.popup {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    background: #1b1b1b;
+    padding: 40px;
+        box-shadow: 0 0 20px #000;
+    @media (max-width: 500px) {
+        padding: 30px;
+    }
+    @media (max-width: 400px) {
+        padding: 25px 15px;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        color: #FFF;
+        border: none;
+        border-bottom: 1px solid  #FFF;
+            &::-webkit-input-placeholder {
+                color: #fff;
+                text-transform: uppercase;
+                opacity: 1;
+                -webkit-transition: opacity 0.3s ease;
+                -o-transition: opacity 0.3s ease;
+                transition: opacity 0.3s ease;
+            }
+            &::-moz-placeholder {
+                color: #fff;
+                text-transform: uppercase;
+                opacity: 1;
+                -webkit-transition: opacity 0.3s ease;
+                -o-transition: opacity 0.3s ease;
+                transition: opacity 0.3s ease;
+            }
+            &:-moz-placeholder {
+                color: #fff;
+                text-transform: uppercase;
+                opacity: 1;
+                -webkit-transition: opacity 0.3s ease;
+                -o-transition: opacity 0.3s ease;
+                transition: opacity 0.3s ease;
+            }
+            &:-ms-input-placeholder {
+                color: #fff;
+                text-transform: uppercase;
+                opacity: 1;
+                -webkit-transition: opacity 0.3s ease;
+                -o-transition: opacity 0.3s ease;
+                transition: opacity 0.3s ease;
+            }
+    }
+    .button {
+        width: 100%;
+    }
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #FFF;
+}

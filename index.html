@@ -180,7 +180,7 @@
                 <div class="footer-top">
                     <h2 class="footer-title">Contact Us</h2>
                     <p class="footer-text">Let’s go on an adventure together! Are you interested in a collaboration, partnership or do you just want to come by and say hello?</p>
-                    <button class="button">Contact</button>    
+                    <a href="#modal-popup" class="button magnific">Contact</a>    
                 </div> <!-- emd footer-top -->
                 
                 <div class="footer-middle">
@@ -218,7 +218,25 @@
             <canvas id="bg-animation"></canvas>
         </footer> <!-- end footer -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup">
+           <form action="" class="form">
+                <div class="form-group">
+                    <input type="text" name="name" required="" placeholder="Your name *">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required="" placeholder="Your email *">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" required="" placeholder="Your phone">
+                </div>
+                <div class="form-group">
+                        <textarea name="msg" placeholder="Your message"></textarea>
+                    </div>
+                <div class="form-group button-group">
+                    <button class="button button--medium"><span>Send</span><i class="fa fa-spinner fa-spin fa-fw"></i></button>
+                </div>
+            </form>
+        </div>
 
         <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Ваша заявка принята =)</p>
