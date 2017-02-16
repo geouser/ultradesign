@@ -48,6 +48,10 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
 
+        form > ul > li {
+            margin-left: 0;
+        }
+
         @media (max-width: 1700px) {
             top: 110px;
         }
