@@ -125,6 +125,7 @@ article {
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
         margin: 50px 0;
+        height: auto!important;
 
         @media (max-width: 1700px) {
             margin: 40px 0;
