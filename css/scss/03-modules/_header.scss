@@ -135,6 +135,9 @@
             -ms-transition: .4s opacity .4s;
              -o-transition: .4s opacity .4s;
                 transition: .4s opacity .4s;
+        @media (max-width: 1000px) {
+            max-width: 100%;
+        }
         ul {
             list-style-type: none;
             text-align: center;
